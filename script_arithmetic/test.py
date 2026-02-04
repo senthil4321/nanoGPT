@@ -4,7 +4,7 @@ import tiktoken
 import sys
 
 # Set up path for nanoGPT project
-correct_nanoGPT_script_dir = 'c:\\Users\\senth\\Documents\\projects\\other\\nanoGPT'
+correct_nanoGPT_script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if correct_nanoGPT_script_dir not in sys.path:
     sys.path.insert(0, correct_nanoGPT_script_dir)
 
