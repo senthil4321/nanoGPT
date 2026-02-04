@@ -53,7 +53,7 @@ encode = lambda s: [stoi[c] for c in s]
 decode = lambda l: ''.join([itos[i] for i in l])
 
 # Generate sample text
-start_string = "PROMPT: Love " # Simple arithmetic prompt with only valid characters
+start_string = "PROMPT: add(5,5) " # Simple arithmetic prompt with only valid characters
 num_samples = 3
 max_new_tokens = 100 # Max length for generated text
 temperature = 0.1  # Much lower for more deterministic output
