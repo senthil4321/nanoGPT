@@ -34,6 +34,6 @@ def build_meta_from_input(input_path: str, output_dir: str) -> None:
 
 if __name__ == '__main__':
     script_dir = os.path.dirname(__file__)
-    input_dir = os.path.join(script_dir, 'out_arithmetic')
+    input_dir = os.path.join(script_dir, '..\data\\arithmetic')
     input_path = os.path.join(input_dir, 'input_arithmetic.txt')
     build_meta_from_input(input_path=input_path, output_dir=script_dir)
