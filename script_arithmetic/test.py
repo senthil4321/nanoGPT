@@ -42,8 +42,8 @@ model.eval()
 model.to(device)
 
 # Load tokenizer
-# The meta.pkl is located at the nanoGPT root folder
-meta_path = os.path.join(correct_nanoGPT_script_dir, 'meta.pkl')
+# The meta.pkl is located in the out_arithmetic folder
+meta_path = os.path.join(model_base_path, 'meta.pkl')
 
 import pickle
 with open(meta_path, 'rb') as f:
